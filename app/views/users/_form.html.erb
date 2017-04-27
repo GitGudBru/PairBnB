@@ -1,12 +1,4 @@
-<div class="text-field">
-  <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
-</div>
 
-<div class="password-field">
-  <%= form.label :password %>
-  <%= form.password_field :password %>
-</div>
 
 <div class="fullname-field">
   <%= form.label :fullname %>
@@ -22,4 +14,16 @@
 <%= label_tag(:gender, "Female") %>
 </div>
 
+<div class="text-field">
+  <%= form.label :email %>
+  <%= form.text_field :email, type: 'email' %>
+</div>
+
+<div class="password-field">
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+</div>
+
+<div class="age-field">
+<%=form.label :age %>
 <%=form.number_field(:age, in: 7..100, step: 1) %>
