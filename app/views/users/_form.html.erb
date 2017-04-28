@@ -7,9 +7,9 @@
 
 <div class="gender-field">
 <%= form.radio_button(:gender, "undefined") %>
-<%= label_tag(:age_child, "Undefined") %>
+<%= label_tag(:gender, "Undefined") %>
 <%= form.radio_button(:gender, "Male") %>
-<%= label_tag(:age_adult, "Male") %>
+<%= label_tag(:gender, "Male") %>
 <%= form.radio_button(:gender, "Female") %>
 <%= label_tag(:gender, "Female") %>
 </div>
@@ -27,3 +27,9 @@
 <div class="age-field">
 <%=form.label :age %>
 <%=form.number_field(:age, in: 7..100, step: 1) %>
+
+<br>
+<!-- facebook sign up !! -->
+<%= link_to "Sign in with Facebook", "/auth/facebook" %>
+
+
